@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Brand</title>
+  <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+  <link rel="stylesheet" href="../../assets/css/Header-Blue.css">
+</head>
+
+<body>
+  <div>
+    <div style="height: 0px;" class="header-blue">
+      <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+        <div class="container">
+          <a [routerLink]="['/home']" class="navbar-brand">SC Buitenboys</a>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown </a>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" role="presentation">First Item</a>
+                  <a class="dropdown-item" role="presentation">Second Item</a>
+                  <a class="dropdown-item" role="presentation">Third Item</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline mr-auto" target="_self"></form>
+            <span class="navbar-text">
+              <a [routerLink]="['/home']" class="login">Home</a>
+            </span>
+            <a [routerLink]="['/registreren']" class="btn btn-light action-button" role="button">Registreren</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <main class="page login-page">
+    <section class="clean-block clean-form dark" style="padding-bottom:0px;">
+      <div class="container">
+        <div class="block-heading">
+          <h2 class="text-info">Inloggen</h2>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control item" type="text" id="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" id="password">
+          </div>
+          <button class="btn btn-primary btn-block" type="button" style="background-color:rgb(24,78,142);">Log In</button>
+        </form>
+      </div>
+      <footer class="page-footer dark" style="padding-top:0;">
+        <div class="footer-copyright" style="margin-top:50px;">
+          <p>© 2018 Copyright Text</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Brand</title>
+  <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+  <link rel="stylesheet" href="../../assets/css/Header-Blue.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  <link rel="stylesheet" href="../../assets/css/Lightbox-Gallery.css">
+</head>
+
+<body>
+  <div>
+    <div class="header-blue">
+      <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+        <div class="container">
+          <a class="navbar-brand">SC Buitenboys</a>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown </a>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" role="presentation">First Item</a>
+                  <a class="dropdown-item" role="presentation">Second Item</a>
+                  <a class="dropdown-item" role="presentation">Third Item</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline mr-auto" target="_self"></form>
+            <span class="navbar-text">
+              <a [routerLink]="['/login']" class="login">Inloggen</a>
+            </span>
+            <a [routerLink]="['/registreren']" class="btn btn-light action-button" role="button">Registreren</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container hero">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+            <h1 style="margin-top:90px;">Passie, strijd, plezier</h1>
+            <p>Mauris egestas tellus non ex condimentum, ac ullamcorper sapien dictum. Nam consequat neque quis sapien viverra
+              convallis. In non tempus lorem. </p>
+          </div>
+          <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+            <div class="iphone-mockup">
+              <img src="../../assets/img/logo-512.png" class="device">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="photo-gallery">
+    <div class="container">
+      <div class="intro">
+        <h2 class="text-center">Galerij</h2>
+        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.
+        </p>
+      </div>
+      <div class="row photos">
+        <div class="col-sm-6 col-md-4 col-lg-3 item">
+          <img class="img-fluid" src="../../assets/img/wedstrijd-voetbalshort_330x510_44325.png">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item">
+          <img class="img-fluid" src="../../assets/img/sc-buitenboys-voetbaltas_1500x1500_49780.png">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item">
+          <img class="img-fluid" src="../../assets/img/reserve-shirt_330x510_43427.png">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item">
+          <img class="img-fluid" src="../../assets/img/trainingtop-lange-mouw_330x510_44178.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer dark" style="padding-top:0;">
+    <div class="footer-copyright" style="margin-top:50px;">
+      <p>© 2018 Copyright Text</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/theme.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>
