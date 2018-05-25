@@ -9,9 +9,20 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  public email;
+  public wachtwoord;
+
   constructor(private _router: Router) { }
 
   ngOnInit() {
+  }
+
+  public inloggen(email, wachtwoord) {
+    const login = {
+      EMAIL: email,
+      PASSWORD: wachtwoord
+    };
+    console.log(login);
   }
 
 }

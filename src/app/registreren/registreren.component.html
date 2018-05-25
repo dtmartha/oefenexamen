@@ -47,17 +47,18 @@
         <form>
           <div class="form-group">
             <label for="name">Name</label>
-            <input class="form-control item" type="text" id="name">
+            <input name="''" [(ngModel)]="naam" class="form-control item" type="text" id="name">
           </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input name="''" [(ngModel)]="email" class="form-control item" type="text" id="email">
+            </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input class="form-control item" type="password" id="password">
+            <input name="''" [(ngModel)]="wachtwoord" class="form-control item" type="password" id="password">
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input class="form-control item" type="text" id="email">
-          </div>
-          <button class="btn btn-primary btn-block" type="button" style="background-color:rgb(24,78,142);">Sign Up</button>
+
+          <button (click)="registreren(naam, email, wachtwoord)" class="btn btn-primary btn-block" type="button" style="background-color:rgb(24,78,142);">Sign Up</button>
         </form>
       </div>
     </section>
